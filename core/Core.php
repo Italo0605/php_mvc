@@ -5,11 +5,11 @@
            if(isset($_GET['url'])){
             $url .= $_GET['url'];
            }
-           $params = "";
+           $params = [];
            if(!empty($url) && $url != '/'){
                 $url = explode('/', $url);
                 array_shift($url);
-                $currentController = $url[0].'Controller';
+                $currentController = ucfirst($url[0]).'Controller';
                 array_shift($url);
 
                 if(isset($url[0]) && !empty($url[0])){
