@@ -1,5 +1,6 @@
 <?php
-    class HomeController{
+    class HomeController extends Controller{
         public function index(){
+            $this->loadView('Home');
         }
     }
