@@ -15,7 +15,7 @@
         else if(file_exists($class.'.php')) {
         require $class.'.php';
         }
-        });
+    });
     $core = new Core();
     $core->run();
     
