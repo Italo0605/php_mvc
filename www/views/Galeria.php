@@ -1,1 +1,0 @@
-<h1>Temos <?php echo $qt?> fotos cadastradas</h1>
